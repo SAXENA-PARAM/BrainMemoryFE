@@ -68,7 +68,7 @@ const MemoryCard = ({title,imageUrl,description,creationTime,creationDate,bookMa
     <div className={`mb-3 md:mb-4 xl:mb-5 break-inside-avoid h-fit rounded-xl ${colorScheme[type]} inset-shadow-sm inset-shadow-white/50 px-2 sm:px-4 py-5 text-[#f1dac4] `}>
         {/* Title Section */}
             <div className='flex'> 
-              <div className='w-[93%] text-lg font-semibold overflow-x-auto overflow-y-scroll noScrollbar break-words pr-2' >{type=="Youtube" || type=="Note"?title:type}</div>
+              <div className='w-[93%] text-lg font-semibold overflow-x-auto overflow-y-scroll noScrollbar break-words pr-2' >{title}</div>
               {showExtras &&  <div onClick={doDelete} className='h-6 w-6 cursor-pointer hover:scale-120 duration-350'><Cross></Cross> </div>}
             </div>
 
